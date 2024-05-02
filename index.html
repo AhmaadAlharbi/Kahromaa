@@ -119,11 +119,11 @@
       style="background-image: url('./assets/images/bg-hero.png')"
     >
       <div class="flex flex-col justify-center items-center h-full">
-        <h3 class="text-white text-lg relative right-[120px] montserrat-font">
+        <h3 class="text-white text-lg md:text-2xl relative right-[120px] montserrat-font">
           Welcome To
         </h3>
-        <h1 class="text-white text-5xl mt-4 mb-1 kufam font-bold">KAHRO-MAA</h1>
-        <p class="montserrat-font text-lg text-gray-300">
+        <h1 class="text-white text-4xl md:text-7xl mt-4 mb-1 kufam font-bold">KAHRO-MAA</h1>
+        <p class="montserrat-font text-lg md:text-2xl text-gray-300">
           Electrical & Electronic Contracting.
         </p>
         <!-- buttons -->
@@ -146,90 +146,81 @@
     </header>
     <!-- About Section -->
     <section id="about" class="py-12">
-      <div class="max-w-screen-xl mx-auto px-4">
-        <div class="flex flex-col md:flex-row items-center justify-center">
-          <!-- TEXT DIV -->
-          <div class="md:w-1/2 md:pr-8">
-            <h5
-              class="pacifico text-red-700 text-5xl text-center md:text-left mb-2"
-            >
-              About
-            </h5>
-            <h3 class="text-blue-900 text-4xl kufam mb-2">KAHROMAA</h3>
-            <p class="text-red-700 montserrat-font mb-4">Established in 2018</p>
-            <p class="text-gray-600 max-w-lg text-center md:text-left">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
-              et alias, mollitia dolores error optio. Minus dolores sed
-              sapiente, distinctio et a error magnam explicabo culpa fugit
-              omnis.
-            </p>
-          </div>
-          <!-- IMAGE DIV -->
-          <div class="md:w-1/2 mt-8 md:mt-0">
-            <img
-              src="./assets/images/about-img.png"
-              alt="About Image"
-              class="w-full"
-            />
+        <div class="max-w-screen-xl mx-auto px-4">
+          <div class="flex flex-col md:flex-row items-center justify-center">
+            <!-- TEXT DIV -->
+            <div class="md:w-1/2 md:pr-8">
+              <h5 class="pacifico text-red-700 text-5xl text-center md:text-left mb-2">About</h5>
+              <h3 class="text-blue-900 text-4xl kufam mb-2">KAHROMAA</h3>
+              <p class="text-red-700 montserrat-font mb-4">Established in 2018</p>
+              <p class="text-gray-600 max-w-lg text-center md:text-left md:mx-auto md:max-w-none">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque et alias, mollitia dolores error optio. Minus dolores sed sapiente, distinctio et a error magnam explicabo culpa fugit omnis.
+              </p>
+            </div>
+            <!-- IMAGE DIV -->
+            <div class="md:w-1/2 mt-8 md:mt-0">
+              <img src="./assets/images/about-img.png" alt="About Image" class="w-full" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      
     <!-- Divisions Section -->
     <section id="divisions" class="py-12 bg-gray-50">
-      <div class="max-w-screen-xl mx-auto px-4">
-        <!-- Title -->
-        <h5 class="pacifico text-red-700 text-5xl md:text-left mb-6">
-          Divisions
-        </h5>
-
-        <!-- Cards Container -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- First Card -->
-          <div class="card bg-white rounded-lg shadow-md">
-            <div class="card-content p-4">
-              <div class="flex items-center mb-4">
-                <i class="fas fa-bolt text-blue-900 text-lg mr-2"></i>
-                <h5 class="text-lg font-semibold text-blue-900">
-                  Medium Voltage
-                </h5>
+        <div class="max-w-screen-xl mx-auto px-4">
+          <!-- Title -->
+          <h5 class="pacifico text-red-700 text-5xl md:text-left mb-6">
+            Divisions
+          </h5>
+      
+          <!-- Cards Container -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- First Card -->
+            <div class="card bg-white rounded-lg shadow-md">
+              <div class="card-content p-4">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-bolt text-blue-900 text-lg mr-2"></i>
+                  <h5 class="text-lg font-semibold text-blue-900">
+                    Medium Voltage
+                  </h5>
+                </div>
+                <p class="text-gray-700 mb-4 max-w-lg mx-auto md:max-w-none md:text-left">
+                  Our team specializes in installing, testing, and maintaining medium voltage systems for industrial and commercial facilities. With a focus on safety compliance, we ensure reliable electrical solutions
+                </p>
               </div>
-              <p class="text-gray-700 mb-4">
-                Our team specializes in installing, testing, and maintaining medium voltage systems for industrial and commercial facilities. With a focus on safety compliance, we ensure reliable electrical solutions
-              </p>
             </div>
-          </div>
-
-          <!-- Second Card -->
-          <div class="card bg-white rounded-lg shadow-md">
-            <div class="card-content p-4">
-              <div class="flex items-center mb-4">
-                <i class="fas fa-plug text-blue-900 text-lg mr-2"></i>
-                <h5 class="text-lg font-semibold text-blue-900">Low Voltage</h5>
+      
+            <!-- Second Card -->
+            <div class="card bg-white rounded-lg shadow-md">
+              <div class="card-content p-4">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-plug text-blue-900 text-lg mr-2"></i>
+                  <h5 class="text-lg font-semibold text-blue-900">Low Voltage</h5>
+                </div>
+                <p class="text-gray-700 mb-4 max-w-lg mx-auto md:max-w-none md:text-left">
+                  Our Low Voltage Division specializes in installing, repairing, and maintaining low voltage systems for residential and commercial properties. Our experienced electricians ensure the safety and efficiency of lighting, communication, and security systems.
+                </p>
               </div>
-              <p class="text-gray-700 mb-4">
-                Our Low Voltage Division specializes in installing, repairing, and maintaining low voltage systems for residential and commercial properties. Our experienced electricians ensure the safety and efficiency of lighting, communication, and security systems.
-              </p>
             </div>
-          </div>
-
-          <!-- Third Card -->
-          <div class="card bg-white rounded-lg shadow-md">
-            <div class="card-content p-4">
-              <div class="flex items-center mb-4">
-                <i class="fas fa-home text-blue-900 text-lg mr-2"></i>
-                <h5 class="text-lg font-semibold text-blue-900">
-                  Residential & Commercial
-                </h5>
+      
+            <!-- Third Card -->
+            <div class="card bg-white rounded-lg shadow-md">
+              <div class="card-content p-4">
+                <div class="flex items-center mb-4">
+                  <i class="fas fa-home text-blue-900 text-lg mr-2"></i>
+                  <h5 class="text-lg font-semibold text-blue-900">
+                    Residential & Commercial
+                  </h5>
+                </div>
+                <p class="text-gray-700 mb-4 max-w-lg mx-auto md:max-w-none md:text-left">
+                  Our Residential & Commercial Division specializes in new installations for both residential and commercial properties. Our experienced electricians ensure the safe and efficient execution of electrical installations tailored to your needs, including lighting, communication, and security systems.
+                </p>
               </div>
-              <p class="text-gray-700 mb-4">
-                Our Residential & Commercial Division specializes in new installations for both residential and commercial properties. Our experienced electricians ensure the safe and efficient execution of electrical installations tailored to your needs, including lighting, communication, and security systems.
-              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      
     <!-- Services Section -->
     <section id="services" class="py-12">
       <div class="max-w-screen-xl mx-auto px-4">
