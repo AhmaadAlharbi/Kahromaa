@@ -33,109 +33,179 @@
     <title>KAHROMAA</title>
   </head>
   <body>
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="./assets/images/new-logo.svg" class="h-8" alt=" Logo" />
-            <span class="self-center text-sm kufam whitespace-nowrap text-[#354872] font-bold">KAHRO-MAA</span>
-          </a>
-          <button id="menu-toggle" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-            </svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto montserrat-font text-gray-50" id="navbar-default">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
-                <a href="#home" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-800 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
-              </li>
-              <li>
-                <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-              </li>
-              <li>
-                <a href="#divisions" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Divisions</a>
-              </li>
-              <li>
-                <a href="#services" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-              </li>
-              <li>
-                <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-              </li>
-              <div class="md:hidden flex space-x-4">
-                      <!-- New Twitter icon -->
-              <li>
-                <a href="#" class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                  <i class="fa-brands fa-x-twitter"></i>
-                </a>
-              </li>
-              <!-- Instagram icon -->
-              <li>
-                <a href="#" class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <!-- LinkedIn icon -->
-              <li>
-                <a href="#" class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </div>
-            </ul>
+    <nav class="bg-white border-gray-200">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="./assets/images/new-logo.svg" class="h-16" alt=" Logo" />
+          <span
+            class="self-center text-md kufam whitespace-nowrap text-[#354872] font-bold"
+            >KAHRO-MAA</span
+          >
+        </a>
+        <button
+          id="menu-toggle"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div
+          class="hidden w-full md:block md:w-auto montserrat-font text-gray-50"
+          id="navbar-default"
+        >
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+          >
+            <li>
+              <a
+                href="#home"
+                class="block py-2 px-3 text-white bg-blue-900 rounded md:bg-transparent md:text-blue-800 md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#divisions"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Divisions</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >Contact</a
+              >
+            </li>
 
-          </div>
-          <!-- ICONS -->
-          <div class="hidden w-full md:block md:w-auto">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-               <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <div class="md:hidden flex space-x-4">
               <!-- New Twitter icon -->
               <li>
-                <a href="#" class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                <a
+                  href="#"
+                  class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >
                   <i class="fa-brands fa-x-twitter"></i>
                 </a>
               </li>
               <!-- Instagram icon -->
               <li>
-                <a href="#" class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                <a
+                  href="#"
+                  class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                >
                   <i class="fab fa-instagram"></i>
                 </a>
               </li>
               <!-- LinkedIn icon -->
               <li>
-                <a href="#" class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                <a
+                  href="#"
+                  class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
                   <i class="fab fa-linkedin"></i>
                 </a>
               </li>
-            </ul>
-          </div>
+            </div>
+          </ul>
         </div>
-      </nav>
-      
-     
-      
+        <!-- ICONS -->
+        <div class="hidden w-full md:block md:w-auto">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+          >
+            <!-- New Twitter icon -->
+            <li>
+              <a
+                href="#"
+                class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+            <!-- Instagram icon -->
+            <li>
+              <a
+                href="#"
+                class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <!-- LinkedIn icon -->
+            <li>
+              <a
+                href="#"
+                class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <header
       class="relative bg-cover bg-center h-72 lg:h-[35rem] bg-no-repeat"
       style="background-image: url('./assets/images/Bg-hero.png')"
     >
       <div class="flex flex-col justify-center items-center h-full">
-        <h3 class="text-white text-lg md:text-2xl relative right-[120px] montserrat-font">
+        <h3
+          class="text-white text-lg md:text-2xl relative right-[120px] montserrat-font"
+        >
           Welcome To
         </h3>
-        <h1 class="text-white text-4xl md:text-7xl mt-4 mb-1 kufam font-bold">KAHRO-MAA</h1>
-        <p class="montserrat-font text-lg md:text-2xl text-gray-300">
+        <h1 class="text-white text-4xl md:text-7xl mt-4 mb-1 kufam font-bold">
+          KAHRO-MAA
+        </h1>
+        <p class="text-white text-lg md:text-2xl relative montserrat-font">
           Electrical & Electronic Contracting.
         </p>
         <!-- buttons -->
         <div class="space-x-12 mt-3">
-          <a href="#about"
+          <a
+            href="#about"
             class="montserrat-font py-2.5 px-5 me-2 mb-2 text-sm font-medium text-white focus:outline-none bg-red-700 rounded-lg hover:bg-red-500 hover:text-white-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700"
           >
             Learn More
           </a>
 
           <a
-          href="#contact"
+            href="#contact"
             class="montserrat-font py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700"
           >
             Contact us
@@ -145,81 +215,124 @@
     </header>
     <!-- About Section -->
     <section id="about" class="py-12">
-        <div class="max-w-screen-xl mx-auto px-4">
-          <div class="flex flex-col md:flex-row items-center justify-center">
-            <!-- TEXT DIV -->
-            <div class="md:w-1/2 md:pr-8">
-              <h5 class="pacifico text-red-700 text-5xl text-center md:text-left mb-2">About</h5>
-              <h3 class="text-blue-900 text-4xl kufam mb-2 text-center md:text-left">KAHROMAA</h3>
-              <p class="text-red-700 montserrat-font mb-4 text-center md:text-left">Established in 2018</p>
-              <p class="montserrat-font leading-7	text-gray-600 max-w-lg text-center md:text-left md:mx-auto md:max-w-none">
-                Kahromaa company for electrical & electronics contracting offers expert electrical solutions for homes and businesses. Our team of qualified engineers and electricians tackle new installations, repairs, and maintenance across residential, commercial, and even medium voltage projects. We combine expertise with personalized service to keep your electrical systems running smoothly and safely. Contact us for a quote!
+      <div class="max-w-screen-xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-center">
+          <!-- TEXT DIV -->
+          <div class="md:w-1/2 md:pr-8">
+            <h5
+              class="pacifico text-red-700 text-5xl text-center md:text-left mb-2"
+            >
+              About
+            </h5>
+            <h3
+              class="text-blue-900 text-4xl kufam mb-2 text-center md:text-left"
+            >
+              KAHROMAA
+            </h3>
+            <p
+              class="text-red-700 montserrat-font mb-4 text-center md:text-left"
+            >
+              Established in 2018
             </p>
-            </div>
-            <!-- IMAGE DIV -->
-            <div class="md:w-1/2 mt-8 md:mt-0">
-              <img src="./assets/images/about-img.png" alt="About Image" class="w-full" />
-            </div>
+            <p
+              class="montserrat-font leading-7 text-gray-600 max-w-lg text-center md:text-left md:mx-auto md:max-w-none"
+            >
+              Kahromaa company for electrical & electronics contracting offers
+              expert electrical solutions for homes and businesses. Our team of
+              qualified engineers and electricians tackle new installations,
+              repairs, and maintenance across residential, commercial, and even
+              medium voltage projects. We combine expertise with personalized
+              service to keep your electrical systems running smoothly and
+              safely. Contact us for a quote!
+            </p>
+          </div>
+          <!-- IMAGE DIV -->
+          <div class="md:w-1/2 mt-8 md:mt-0">
+            <img
+              src="./assets/images/about-img.png"
+              alt="About Image"
+              class="w-full"
+            />
           </div>
         </div>
-      </section>
-      
+      </div>
+    </section>
+
     <!-- Divisions Section -->
     <section id="divisions" class="py-12 bg-gray-50">
-        <div class="max-w-screen-xl mx-auto px-4">
-          <!-- Title -->
-          <h5 class="pacifico text-red-700 text-5xl md:text-left text-center mb-6">
-            Divisions
-          </h5>
-      
-          <!-- Cards Container -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- First Card -->
-            <div class="card bg-white rounded-lg shadow-md">
-              <div class="card-content p-4">
-                <div class="flex items-center mb-4">
-                  <i class="fas fa-bolt text-blue-900 text-lg mr-2"></i>
-                  <h5 class="text-lg font-semibold text-blue-900">
-                    Medium Voltage
-                  </h5>
-                </div>
-                <p class="text-gray-700 leading-6 mb-4 max-w-lg mx-auto md:max-w-none md:text-left">
-                  Our team specializes in installing, testing, and maintaining medium voltage systems for industrial and commercial facilities. With a focus on safety compliance, we ensure reliable electrical solutions
-                </p>
+      <div class="max-w-screen-xl mx-auto px-4">
+        <!-- Title -->
+        <h5
+          class="pacifico text-red-700 text-5xl md:text-left text-center mb-6"
+        >
+          Divisions
+        </h5>
+
+        <!-- Cards Container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- First Card -->
+          <div class="card bg-white rounded-lg shadow-md">
+            <div class="card-content p-4">
+              <div class="flex items-center mb-4">
+                <i class="fas fa-bolt text-blue-900 text-lg mr-2"></i>
+                <h5 class="text-lg font-semibold text-blue-900">
+                  Medium Voltage
+                </h5>
               </div>
+              <p
+                class="text-gray-700 leading-6 mb-4 max-w-lg mx-auto md:max-w-none md:text-left"
+              >
+                Our team specializes in installing, testing, and maintaining
+                medium voltage systems for industrial and commercial facilities.
+                With a focus on safety compliance, we ensure reliable electrical
+                solutions
+              </p>
             </div>
-      
-            <!-- Second Card -->
-            <div class="card bg-white rounded-lg shadow-md">
-              <div class="card-content p-4">
-                <div class="flex items-center mb-4">
-                  <i class="fas fa-plug text-blue-900 text-lg mr-2"></i>
-                  <h5 class="text-lg font-semibold text-blue-900">Low Voltage</h5>
-                </div>
-                <p class="text-gray-700 mb-4 leading-6  max-w-lg mx-auto md:max-w-none md:text-left">
-                  Our Low Voltage Division specializes in installing, repairing, and maintaining low voltage systems for residential and commercial properties. Our experienced electricians ensure the safety and efficiency of lighting, communication, and security systems.
-                </p>
+          </div>
+
+          <!-- Second Card -->
+          <div class="card bg-white rounded-lg shadow-md">
+            <div class="card-content p-4">
+              <div class="flex items-center mb-4">
+                <i class="fas fa-plug text-blue-900 text-lg mr-2"></i>
+                <h5 class="text-lg font-semibold text-blue-900">Low Voltage</h5>
               </div>
+              <p
+                class="text-gray-700 mb-4 leading-6 max-w-lg mx-auto md:max-w-none md:text-left"
+              >
+                Our Low Voltage Division specializes in installing, repairing,
+                and maintaining low voltage systems for residential and
+                commercial properties. Our experienced electricians ensure the
+                safety and efficiency of lighting, communication, and security
+                systems.
+              </p>
             </div>
-      
-            <!-- Third Card -->
-            <div class="card bg-white rounded-lg shadow-md">
-              <div class="card-content p-4">
-                <div class="flex items-center mb-4">
-                  <i class="fas fa-home text-blue-900 text-lg mr-2"></i>
-                  <h5 class="text-lg font-semibold text-blue-900">
-                    Residential & Commercial
-                  </h5>
-                </div>
-                <p class="text-gray-700 leading-6 mb-4 max-w-lg mx-auto md:max-w-none md:text-left">
-                  Our Residential & Commercial Division specializes in new installations for both residential and commercial properties. Our experienced electricians ensure the safe and efficient execution of electrical installations tailored to your needs, including lighting, communication, and security systems.
-                </p>
+          </div>
+
+          <!-- Third Card -->
+          <div class="card bg-white rounded-lg shadow-md">
+            <div class="card-content p-4">
+              <div class="flex items-center mb-4">
+                <i class="fas fa-home text-blue-900 text-lg mr-2"></i>
+                <h5 class="text-lg font-semibold text-blue-900">
+                  Residential & Commercial
+                </h5>
               </div>
+              <p
+                class="text-gray-700 leading-6 mb-4 max-w-lg mx-auto md:max-w-none md:text-left"
+              >
+                Our Residential & Commercial Division specializes in new
+                installations for both residential and commercial properties.
+                Our experienced electricians ensure the safe and efficient
+                execution of electrical installations tailored to your needs,
+                including lighting, communication, and security systems.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      
+      </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="py-12">
       <div class="max-w-screen-xl mx-auto px-4">
@@ -231,11 +344,18 @@
             >
               Services
             </h5>
-            <h3 class="text-blue-900 text-2xl md:text-4xl kufam mb-2 text-center md:text-left">
+            <h3
+              class="text-blue-900 text-2xl md:text-4xl kufam mb-2 text-center md:text-left"
+            >
               Sales & Installation
             </h3>
-            <p class="text-gray-600  leading-7 max-w-lg text-center md:text-left montserrat-font">
-                We provide a comprehensive selection of electrical equipment and materials for your residential, commercial, and medium voltage projects. Our team will expertly install everything to ensure optimal functionality and safety.
+            <p
+              class="text-gray-600 leading-7 max-w-lg text-center md:text-left montserrat-font"
+            >
+              We provide a comprehensive selection of electrical equipment and
+              materials for your residential, commercial, and medium voltage
+              projects. Our team will expertly install everything to ensure
+              optimal functionality and safety.
             </p>
           </div>
           <!-- IMAGE DIV -->
@@ -265,11 +385,17 @@
             >
               &
             </h5>
-            <h3 class="text-blue-900 text-2xl md:text-4xl kufam mb-2 text-center md:text-left">
+            <h3
+              class="text-blue-900 text-2xl md:text-4xl kufam mb-2 text-center md:text-left"
+            >
               Maintenance & Repair
             </h3>
-            <p class="text-gray-600 leading-8 max-w-lg text-center md:text-left montserrat-font">
-                Our highly skilled technicians offer preventative maintenance plans and prompt repair services to keep your electrical systems running smoothly and address any electrical issues efficiently.
+            <p
+              class="text-gray-600 leading-8 max-w-lg text-center md:text-left montserrat-font"
+            >
+              Our highly skilled technicians offer preventative maintenance
+              plans and prompt repair services to keep your electrical systems
+              running smoothly and address any electrical issues efficiently.
             </p>
           </div>
         </div>
@@ -283,7 +409,9 @@
         >
           <!-- TEXT DIV -->
           <div class="md:w-1/2 md:pr-8">
-            <h5 class="pacifico text-red-700 text-5xl text-center md:text-left mb-5">
+            <h5
+              class="pacifico text-red-700 text-5xl text-center md:text-left mb-5"
+            >
               Contact us
             </h5>
             <p class="montserrat-font text-sm text-blue-900 mb-4">
@@ -293,14 +421,14 @@
             </p>
             <!-- Company Address -->
             <p class="text-sm text-gray-600 mb-4">
-              Company Name <br>
-              123 Street Name, City, Country <br>
-              Phone: +123 456 7890 <br>
+              Company Name <br />
+              123 Street Name, City, Country <br />
+              Phone: +123 456 7890 <br />
               Email: info@example.com
             </p>
             <!-- Google Maps Embed -->
           </div>
-          
+
           <!-- FORM DIV -->
           <div class="md:w-1/2 w-full">
             <form action="#" method="POST" class="max-w-md mx-auto">
@@ -373,10 +501,14 @@
           <!-- Footer Logo -->
           <div class="mb-4 md:mb-0 bg-white">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-              <img src="./assets/images/logo-en.png" class="h-20 md:h-24 lg:h-32 xl:h-40" alt="Logo" />
+              <img
+                src="./assets/images/logo-en.png"
+                class="h-36 md:h-44 lg:h-32 xl:h-60"
+                alt="Logo"
+              />
             </a>
           </div>
-          
+
           <!-- Footer Links -->
           <div class="md:flex md:space-x-6">
             <a href="#" class="hover:text-gray-400">Home</a>
@@ -386,16 +518,16 @@
           </div>
           <!-- Social Links -->
           <div class="mt-4 md:mt-0">
-            <a href="#" class="text-gray-400 hover:text-white mx-2"></a>
+            <a href="#" class="text-gray-400 hover:text-white mx-2">
               <i class="fa-brands fa-x-twitter"></i>
             </a>
-  
-            <a href="#" class="text-gray-400 hover:text-white mx-2"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" class="text-gray-400 hover:text-white mx-2"
-              ><i class="fab fa-linkedin"></i
-            ></a>
+
+            <a href="#" class="text-gray-400 hover:text-white mx-2">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white mx-2">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </div>
         </div>
         <!-- Copyright -->
@@ -404,11 +536,14 @@
         </div>
       </div>
     </footer>
+
     <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-          const navbar = document.getElementById('navbar-default');
-          navbar.classList.toggle('hidden');
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          const navbar = document.getElementById("navbar-default");
+          navbar.classList.toggle("hidden");
         });
-      </script>
+    </script>
   </body>
 </html>
