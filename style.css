@@ -1,17 +1,30 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 .montserrat-font {
-    font-family: "Montserrat Alternates", sans-serif;
-  }
-  .kufam {
-    font-family: "Kufam", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.kufam {
+  font-family: "Kufam", sans-serif;
 
-  }
-  .pacifico {
-    font-family: "Pacifico", cursive;
-  }
-  
+}
+.pacifico {
+  font-family: "Pacifico", cursive;
+}
+.almarai-bold {
+  font-family: "Almarai", sans-serif;
+
+}
+.cairo {
+  font-family: "Cairo", sans-serif;
+}
+.tajawal {
+  font-family: "Tajawal", sans-serif;
+}
+.el-messiri {
+  font-family: "El Messiri", sans-serif;
+
+}
