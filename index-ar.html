@@ -18,6 +18,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
@@ -134,9 +138,9 @@
               <li>
                 <a
                   href="./index.html"
-                  class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                  class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 montserrat-font"
                 >
-                  <img class="h-6" src="./assets/images/language.png" alt="" />
+                  English
                 </a>
               </li>
             </div>
@@ -148,39 +152,28 @@
             class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
           >
             <!-- New Twitter icon -->
-            <li>
-              <a
-                href="#"
-                class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-              >
+            <li class="flex items-center justify-center w-10 h-10">
+              <a href="#" class="li-link">
                 <i class="fa-brands fa-x-twitter"></i>
               </a>
             </li>
             <!-- Instagram icon -->
-            <li>
-              <a
-                href="#"
-                class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-              >
+            <li class="flex items-center justify-center w-10 h-10">
+              <a href="#" class="li-link">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
             <!-- LinkedIn icon -->
-            <li>
-              <a
-                href="#"
-                class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-              >
+            <li class="flex items-center justify-center w-10 h-10">
+              <a href="#" class="li-link">
                 <i class="fab fa-linkedin"></i>
               </a>
             </li>
-            <li>
-              <a
-                href="./index.html"
-                class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-              >
-                <img class="h-6" src="./assets/images/language.png" alt="" />
-              </a>
+            <!-- English link -->
+            <li
+              class="flex items-center justify-center w-24 h-10 montserrat-font"
+            >
+              <a href="./index.html" class="li-link"> English </a>
             </li>
           </ul>
         </div>
@@ -550,8 +543,19 @@
           </div>
         </div>
         <!-- Copyright -->
-        <div class="text-center mt-8">
-          <p class="cairo">&copy; 2024 كهروماء. جميع الحقوق محفوظة.</p>
+        <div class="text-center mt-8 tajawal">
+          <p class="text-gray-100 text-md">
+            &copy; 2024 KAHRO-MAA. جميع الحقوق محفوظة.
+          </p>
+          <p class="text-gray-200 text-sm mt-5 el-messiri">
+            تصميم وتطوير بواسطة
+            <a
+              href="https://ahmaadalharbi.github.io/ahmad-portfolio-v2/"
+              class="text-blue-100 hover:underline"
+            >
+              أحمد الحربي
+            </a>
+          </p>
         </div>
       </div>
     </footer>

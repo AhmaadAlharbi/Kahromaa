@@ -29,6 +29,10 @@
       href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>KAHROMAA</title>
   </head>
@@ -142,9 +146,9 @@
               <li>
                 <a
                   href="./index-ar.html"
-                  class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                  class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 tajawal"
                 >
-                  <img class="h-6" src="./assets/images/arabic.png" alt="" />
+                  العربية
                 </a>
               </li>
             </div>
@@ -156,39 +160,26 @@
             class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
           >
             <!-- New Twitter icon -->
-            <li>
-              <a
-                href="#"
-                class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-              >
+            <li class="flex items-center justify-center w-10 h-10">
+              <a href="#" class="li-link">
                 <i class="fa-brands fa-x-twitter"></i>
               </a>
             </li>
             <!-- Instagram icon -->
-            <li>
-              <a
-                href="#"
-                class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-              >
+            <li class="flex items-center justify-center w-10 h-10">
+              <a href="#" class="li-link">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
             <!-- LinkedIn icon -->
-            <li>
-              <a
-                href="#"
-                class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-              >
+            <li class="flex items-center justify-center w-10 h-10">
+              <a href="#" class="li-link">
                 <i class="fab fa-linkedin"></i>
               </a>
             </li>
-            <li>
-              <a
-                href="./index-ar.html"
-                class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-              >
-                <img class="h-6" src="./assets/images/arabic.png" alt="" />
-              </a>
+            <!-- Arabic link -->
+            <li class="flex items-center justify-center w-24 h-10 tajawal">
+              <a href="./index-ar.html" class="li-link"> العربية </a>
             </li>
           </ul>
         </div>
@@ -464,7 +455,11 @@
 
           <!-- FORM DIV -->
           <div class="md:w-1/2 w-full">
-            <form action="#" method="POST" class="max-w-md mx-auto">
+            <form
+              action="https://formsubmit.co/lostq8@hotmail.com"
+              method="POST"
+              class="max-w-md mx-auto"
+            >
               <!-- Name input -->
               <div class="mb-4">
                 <label
@@ -512,6 +507,13 @@
                   class="w-full sm:w-full md:w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
                   required
                 ></textarea>
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://127.0.0.1:5500/thankyou.html"
+                />
               </div>
               <!-- Submit button -->
               <button
@@ -572,7 +574,18 @@
         </div>
         <!-- Copyright -->
         <div class="text-center mt-8">
-          <p>&copy; 2024 KAHRO-MAA. All rights reserved.</p>
+          <p class="text-gray-100 text-md">
+            &copy; 2024 KAHRO-MAA. All rights reserved.
+          </p>
+          <p class="text-gray-200 text-sm montserrat-font mt-5">
+            Designed & developed by
+            <a
+              href="https://ahmaadalharbi.github.io/ahmad-portfolio-v2/"
+              class="text-blue-100 hover:underline"
+            >
+              Ahmad Alharbi
+            </a>
+          </p>
         </div>
       </div>
     </footer>
