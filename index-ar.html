@@ -436,7 +436,14 @@
 
           <!-- FORM DIV -->
           <div class="md:w-1/2 w-full">
-            <form action="#" method="POST" class="max-w-md mx-auto">
+            <form
+              id="contactForm"
+              action="https://formsubmit.co/ahmadalhaarbi@hotmail.com"
+              method="POST"
+              class="max-w-md mx-auto"
+              method="POST"
+              class="max-w-md mx-auto"
+            >
               <!-- Name input -->
               <div class="mb-4">
                 <label
@@ -492,7 +499,22 @@
               >
                 ارسال
               </button>
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input
+                type="hidden"
+                name="_next"
+                value="http://127.0.0.1:5500/thankyou.html"
+              />
             </form>
+            <div id="submissionMessage" class="mt-6 text-center hidden">
+              <p
+                class="text-red-700 text-lg font-semibold flex items-center justify-center tajawal"
+              >
+                <i class="fas fa-spinner fa-spin mr-2"></i> جاري ارسال رسالتك
+                يرجى الإنتظار
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -560,13 +582,6 @@
       </div>
     </footer>
 
-    <script>
-      document
-        .getElementById("menu-toggle")
-        .addEventListener("click", function () {
-          const navbar = document.getElementById("navbar-default");
-          navbar.classList.toggle("hidden");
-        });
-    </script>
+    <script src="./app.js"></script>
   </body>
 </html>
