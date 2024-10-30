@@ -29,152 +29,185 @@
     <title>كهروماء | الرئيسية</title>
   </head>
   <body dir="rtl">
-    <nav class="bg-white border-gray-200">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4"
-      >
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="./assets/images/new-logo.svg" class="h-16" alt="Logo" />
-          <span
-            class="self-center text-3xl el-messiri whitespace-nowrap text-[#354872] font-bold"
-            >كهروماء</span
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo Section -->
+          <a
+            href="#"
+            class="flex items-center space-x-3 rtl:space-x-reverse hover:opacity-90 transition-opacity"
           >
-        </a>
-        <button
-          id="menu-toggle"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
+            <img src="./assets/images/new-logo.svg" class="h-16" alt="Logo" />
+            <span
+              class="self-center text-3xl el-messiri whitespace-nowrap text-[#354872] font-bold"
+              >كهروماء</span
+            >
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-toggle"
+            class="md:hidden p-2 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 transition-colors"
           >
-            <path
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6 text-gray-600"
+              fill="none"
+              viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-        <div
-          class="hidden w-full md:flex md:w-auto tajawal text-gray-50"
-          id="navbar-default"
-        >
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex md:items-center tajawal">
+            <ul class="flex space-x-8 rtl:space-x-reverse">
+              <li>
+                <a
+                  href="#home"
+                  class="block py-2 text-blue-800 hover:text-blue-600 transition-colors font-medium"
+                  aria-current="page"
+                  >الرئيسية</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
+                  >من نحن</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#divisions"
+                  class="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
+                  >الأقسام</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
+                  >الخدمات</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block py-2 text-gray-700 hover:text-blue-600 transition-colors"
+                  >اتصل بنا</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./careers_ar.html"
+                  class="block py-2 text-red-600 hover:text-red-500 transition-colors font-medium"
+                  >الوظائف</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Icons & Language Switch -->
+          <div
+            class="hidden md:flex items-center space-x-6 rtl:space-x-reverse"
           >
-            <li>
+            <div class="flex items-center space-x-4 rtl:space-x-reverse">
               <a
-                href="#home"
-                class="block py-2 px-3 text-white bg-blue-900 rounded md:bg-transparent md:text-blue-800 md:p-0"
-                aria-current="page"
-                >الرئيسية</a
+                href="https://x.com/kahromaa"
+                class="text-gray-600 hover:text-gray-900 transition-colors"
               >
-            </li>
-            <li>
-              <a
-                href="#about"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                >من نحن</a
-              >
-            </li>
-            <li>
-              <a
-                href="#divisions"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                >الأقسام</a
-              >
-            </li>
-            <li>
-              <a
-                href="#services"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                >الخدمات</a
-              >
-            </li>
-            <li>
-              <a
-                href="#contact"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                >اتصل بنا</a
-              >
-            </li>
-            <li>
-              <a
-                href="./careers_ar.html"
-                class="block py-2 px-3 text-red-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                >الوظائف</a
-              >
-            </li>
-          </ul>
-        </div>
-        <!-- ICONS -->
-        <div class="hidden md:flex md:w-auto mr-auto">
-          <ul
-            class="font-medium flex flex-col text-sm p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
-          >
-            <!-- New Twitter icon -->
-            <li class="flex items-center justify-center w-10 h-10">
-              <a href="https://x.com/kahromaa" class="li-link">
-                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-x-twitter text-xl"></i>
               </a>
-            </li>
-            <!-- Instagram icon -->
-            <li class="flex items-center justify-center w-10 h-10">
-              <a href="https://www.instagram.com/kahro.maa/" class="li-link">
-                <i class="fab fa-instagram"></i>
+              <a
+                href="https://www.instagram.com/kahro.maa/"
+                class="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                <i class="fab fa-instagram text-xl"></i>
               </a>
-            </li>
-            <!-- LinkedIn icon -->
-            <li class="flex items-center justify-center w-10 h-10">
               <a
                 href="https://www.linkedin.com/company/kahromaa-electrical-electronics-contracting/about/"
-                class="li-link"
+                class="text-gray-600 hover:text-gray-900 transition-colors"
               >
-                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-linkedin text-xl"></i>
               </a>
-            </li>
-            <!-- Arabic link -->
-            <li class="flex items-center justify-center w-24 h-10 kufam">
-              <a href="./index-ar.html" class="li-link"> English </a>
-            </li>
-          </ul>
+            </div>
+            <div class="h-6 w-px bg-gray-200"></div>
+            <a
+              href="./index.html"
+              class="text-gray-700 hover:text-blue-600 transition-colors kufam"
+              >English</a
+            >
+          </div>
         </div>
-        <div class="flex justify-center space-x-4 md:hidden mt-4">
-          <!-- New Twitter icon -->
-          <a
-            href="https://x.com/kahromaa"
-            class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-          >
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-          <!-- Instagram icon -->
-          <a
-            href="https://www.instagram.com/kahro.maa/"
-            class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-          <!-- LinkedIn icon -->
-          <a
-            href="https://www.linkedin.com/company/kahromaa-electrical-electronics-contracting/about/"
-            class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a
-            href="./index.html"
-            class="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 kufam"
-          >
-            English
-          </a>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <a
+              href="#home"
+              class="block px-3 py-2 text-blue-800 font-medium rounded-md hover:bg-gray-50"
+              >الرئيسية</a
+            >
+            <a
+              href="#about"
+              class="block px-3 py-2 text-gray-700 rounded-md hover:bg-gray-50"
+              >من نحن</a
+            >
+            <a
+              href="#divisions"
+              class="block px-3 py-2 text-gray-700 rounded-md hover:bg-gray-50"
+              >الأقسام</a
+            >
+            <a
+              href="#services"
+              class="block px-3 py-2 text-gray-700 rounded-md hover:bg-gray-50"
+              >الخدمات</a
+            >
+            <a
+              href="#contact"
+              class="block px-3 py-2 text-gray-700 rounded-md hover:bg-gray-50"
+              >اتصل بنا</a
+            >
+            <a
+              href="./careers_ar.html"
+              class="block px-3 py-2 text-red-600 font-medium rounded-md hover:bg-gray-50"
+              >الوظائف</a
+            >
+          </div>
+          <div class="px-4 py-3 border-t border-gray-200">
+            <div class="flex justify-center space-x-4 rtl:space-x-reverse">
+              <a
+                href="https://x.com/kahromaa"
+                class="text-gray-600 hover:text-gray-900"
+              >
+                <i class="fa-brands fa-x-twitter text-xl"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/kahro.maa/"
+                class="text-gray-600 hover:text-gray-900"
+              >
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/kahromaa-electrical-electronics-contracting/about/"
+                class="text-gray-600 hover:text-gray-900"
+              >
+                <i class="fab fa-linkedin text-xl"></i>
+              </a>
+              <a
+                href="./index.html"
+                class="text-gray-700 hover:text-blue-600 kufam"
+                >English</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -430,134 +463,224 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-12 bg-gray-200">
+    <section class="py-16 bg-gradient-to-b from-gray-50 to-gray-200">
       <div class="max-w-screen-xl mx-auto px-4">
-        <div
-          class="flex flex-col lg:flex-row items-start md:items-center justify-center"
-        >
-          <!-- TEXT DIV -->
-          <div class="lg:w-1/2 md:pr-8">
-            <h5
-              class="el-messiri text-red-700 text-5xl text-center md:text-right mb-5"
-            >
-              اتصل بنا
-            </h5>
-
-            <p class="tajawal text-lg text-blue-900 mb-4" dir="rtl">
-              يسرنا أن نتلقى رسالتكم! إذا كانت لديكم أي استفسارات أو ملاحظات، أو
-              ترغبون فقط في التواصل معنا، فلا تترددوا في الاتصال بنا عبر النموذج
-              أدناه. سنقوم بالرد عليكم في أقرب وقت ممكن.
-            </p>
-            <!-- Company Address -->
-            <!-- Company Address -->
-            <div class="bg-gray-100 rounded-lg p-4 mb-6 almarai-bold">
-              <p class="text-base text-gray-600">
-                <span class="flex items-center">
-                  <i class="fas fa-building text-blue-500 ml-2"></i>
-                  <span class="font-bold">كهروماء</span>
-                </span>
-                <br />
-                <span class="flex items-center">
-                  <i class="fas fa-map-marker-alt text-blue-500 ml-2"></i>
-                  <span class="font-bold">العنوان:</span>
-                  حولي ، مجمع الرفاعي الدور 1 ، 26
-                </span>
-                <br />
-                <span class="flex items-center">
-                  <i class="fas fa-envelope text-blue-500 ml-2"></i>
-                  <span class="font-bold">البريد اللإلكتروني:</span>
-                  info@kahromaa.com
-                </span>
-              </p>
-            </div>
-            <!-- Google Maps Embed -->
+        <!-- Section Header with Decorative Elements -->
+        <div class="text-center mb-16 relative">
+          <div class="absolute left-1/2 transform -translate-x-1/2 -top-6 w-24 h-24 bg-red-50 rounded-full opacity-50"></div>
+          <h2 class="el-messiri text-5xl text-red-700 mb-4 relative">اتصل بنا</h2>
+          <div class="flex items-center justify-center gap-2 mb-6">
+            <div class="w-12 h-1 bg-blue-800 rounded-full"></div>
+            <div class="w-3 h-3 bg-red-600 rounded-full"></div>
+            <div class="w-12 h-1 bg-blue-800 rounded-full"></div>
           </div>
-
-          <!-- FORM DIV -->
-          <div class="md:w-1/2 w-full">
-            <form
-              id="contactForm"
-              action="https://formsubmit.co/info@kahromaa.com"
-              method="POST"
-              class="max-w-md mx-auto"
-              method="POST"
-              class="max-w-md mx-auto"
-            >
-              <!-- Name input -->
-              <div class="mb-4">
-                <label
-                  for="name"
-                  class="block text-gray-700 text-sm font-bold mb-2"
-                  >الإسم</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="الرجاء كتابة الاسم"
-                  class="w-full sm:w-full md:w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-                  required
-                />
+          <p class="tajawal text-lg text-blue-900 max-w-2xl mx-auto leading-relaxed" dir="rtl">
+            يسرنا أن نتلقى رسالتكم! إذا كانت لديكم أي استفسارات أو ملاحظات، أو ترغبون فقط في التواصل معنا، 
+            فلا تترددوا في الاتصال بنا عبر النموذج أدناه. سنقوم بالرد عليكم في أقرب وقت ممكن.
+          </p>
+        </div>
+    
+        <!-- Cards Container -->
+        <div class="flex flex-col lg:flex-row gap-8 items-stretch">
+          <!-- Left Column - Contact Information (Blue Theme) -->
+          <div class="lg:w-1/2 w-full">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:shadow-xl transition-all duration-300 h-full border border-blue-100">
+              <!-- Header -->
+              <div class="bg-gradient-to-l from-rose-600 to-rose-800 px-6 py-5 relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10">
+                  <div class="absolute inset-0 bg-repeat" style="background-image: url('data:image/svg+xml,%3Csvg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"%23FFFFFF\" fill-opacity=\"0.8\" fill-rule=\"evenodd\"%3E%3Ccircle cx=\"3\" cy=\"3\" r=\"3\"/%3E%3C/g%3E%3C/svg%3E');"></div>
+                </div>
+                <h3 class="text-2xl font-bold text-white text-center almarai-bold relative">
+                  معلومات الاتصال
+                </h3>
               </div>
-              <!-- Email input -->
-              <div class="mb-4">
-                <label
-                  for="email"
-                  class="block text-gray-700 text-sm font-bold mb-2"
-                  >الإيميل</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="الرجاء كتابة الإيميل"
-                  class="w-full sm:w-full md:w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-                  required
-                />
+    
+              <!-- Contact Details Container -->
+              <div class="p-4 space-y-4">
+                <!-- Company Name -->
+                <div class="flex items-center group hover:bg-rose-50 p-3 rounded-xl transition-all duration-300">
+                  <div class="flex-shrink-0">
+                    <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                      <i class="fas fa-building text-rose-600 text-lg"></i>
+                    </div>
+                  </div>
+                  <div class="mr-3 flex-grow">
+                    <p class="text-xs text-gray-500 almarai-bold mb-0.5">الشركة</p>
+                    <p class="text-gray-900 font-semibold almarai-bold text-base">
+                      كهروماء للمقاولات الكهربائية و الالكترونية
+                    </p>
+                  </div>
+                </div>
+              
+                <!-- Address -->
+                <div class="flex items-center group hover:bg-rose-50 p-3 rounded-xl transition-all duration-300">
+                  <div class="flex-shrink-0">
+                    <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center group-hover:bg-rose-200 transition-colors">
+                      <i class="fas fa-map-marker-alt text-rose-600 text-lg"></i>
+                    </div>
+                  </div>
+                  <div class="mr-3 flex-grow">
+                    <p class="text-xs text-gray-500 almarai-bold mb-0.5">العنوان</p>
+                    <p class="text-gray-900 font-semibold almarai-bold text-base">
+                      حولي، مجمع أضواء المدينة الدور 5، 19
+                    </p>
+                  </div>
+                </div>
+              
+                <!-- Contact Info Grid -->
+                <div class="grid grid-cols-1 gap-4">
+                  <!-- Email -->
+                  <div class="flex items-center group hover:bg-rose-50 p-3 rounded-xl transition-all duration-300">
+                    <div class="flex-shrink-0">
+                      <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center group-hover:bg-rose-200 transition-colors">
+                        <i class="fas fa-envelope text-rose-600 text-lg"></i>
+                      </div>
+                    </div>
+                    <div class="mr-3 flex-grow">
+                      <p class="text-xs text-gray-500 almarai-bold mb-0.5">
+                        البريد الإلكتروني
+                      </p>
+                      <a href="mailto:info@kahromaa.com" class="text-gray-900 font-semibold hover:text-rose-600 transition-colors text-base" dir="ltr">
+                        info@kahromaa.com
+                      </a>
+                    </div>
+                  </div>
+              
+                  <!-- Phone -->
+                  <div class="flex items-center group hover:bg-rose-50 p-3 rounded-xl transition-all duration-300">
+                    <div class="flex-shrink-0">
+                      <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center group-hover:bg-rose-200 transition-colors">
+                        <i class="fas fa-phone-alt text-rose-600 text-lg"></i>
+                      </div>
+                    </div>
+                    <div class="mr-3 flex-grow">
+                      <p class="text-xs text-gray-500 almarai-bold mb-0.5">الهاتف</p>
+                      <a href="tel:+96522212762" class="text-gray-900 font-semibold hover:text-rose-600 transition-colors text-base" dir="ltr">
+                        +965 22212762
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <!-- Message textarea -->
-              <div class="mb-4">
-                <label
-                  for="message"
-                  class="block text-gray-700 text-sm font-bold mb-2"
-                  >الرسالة</label
-                >
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="الرجاء كتابة الرسالة"
-                  rows="4"
-                  class="w-full sm:w-full md:w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-                  required
-                ></textarea>
+    
+             
+            </div>
+          </div>
+    
+          <!-- Right Column - Contact Form (Red Theme) -->
+          <div class=" w-full" dir="rtl">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:shadow-xl transition-all duration-300 border border-red-100">
+              <!-- Form Header -->
+              <div class="bg-gradient-to-l from-blue-700 to-blue-900 px-6 py-5 relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10">
+                  <div class="absolute inset-0 bg-repeat" ></div>
+                </div>
+                <h3 class="text-2xl font-bold text-white text-center almarai-bold relative">
+                  نموذج التواصل
+                </h3>
               </div>
-              <!-- Submit button -->
-              <button
-                type="submit"
-                class="w-full bg-blue-900 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
-              >
-                ارسال
-              </button>
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="table" />
-              <input
-                type="hidden"
-                name="_next"
-                value="https://kahromaa.com/thankyou.html"
-              />
-            </form>
-            <div id="submissionMessage" class="mt-6 text-center hidden">
-              <p
-                class="text-red-700 text-lg font-semibold flex items-center justify-center tajawal"
-              >
-                <i class="fas fa-spinner fa-spin mr-2"></i> جاري ارسال رسالتك
-                يرجى الإنتظار
-              </p>
+    
+              <form id="contactForm" action="https://formsubmit.co/info@kahromaa.com" method="POST" class="p-8 space-y-6">
+                <!-- Name Input Group -->
+                <div class="space-y-2">
+                  <label for="name" class="block text-gray-700 text-sm font-bold almarai-bold">الإسم</label>
+                  <div class="relative group">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="الرجاء كتابة الاسم"
+                      class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 outline-none almarai-bold placeholder:text-gray-400 group-hover:border-blue-200"
+                      required
+                    />
+                    <div class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 group-hover:text-blue-500 transition-colors">
+                      <i class="fas fa-user"></i>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- Email Input Group -->
+                <div class="space-y-2">
+                  <label for="email" class="block text-gray-700 text-sm font-bold almarai-bold">البريد الإلكتروني</label>
+                  <div class="relative group">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="الرجاء كتابة البريد الإلكتروني"
+                      class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 outline-none almarai-bold placeholder:text-gray-400 group-hover:border-blue-200"
+                      required
+                    />
+                    <div class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 group-hover:text-blue-500 transition-colors">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- Message Input Group -->
+                <div class="space-y-2">
+                  <label for="message" class="block text-gray-700 text-sm font-bold almarai-bold">الرسالة</label>
+                  <div class="relative group">
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="الرجاء كتابة الرسالة"
+                      rows="5"
+                      class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 outline-none almarai-bold placeholder:text-gray-400 resize-none group-hover:border-blue-200"
+                      required
+                    ></textarea>
+                    <div class="absolute left-3 top-4 text-gray-400 group-hover:text-blue-500 transition-colors">
+                      <i class="fas fa-comment"></i>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- Submit Button -->
+                <button
+                  type="submit"
+                  class="w-full bg-gradient-to-l from-blue-600 to-blue-800 text-white py-4 px-6 rounded-xl hover:from-blue-700 hover:to-blue-900 transform hover:-translate-y-0.5 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 almarai-bold text-lg shadow-lg hover:shadow-blue-200"
+                >
+                  <span class="flex items-center justify-center">
+                    <i class="fas fa-paper-plane ml-2"></i>
+                    ارسال الرسالة
+                  </span>
+                </button>
+    
+                <!-- Hidden Fields -->
+                <input type="hidden" name="_captcha" value="true" />
+                <input type="text" name="_honey" style="display: none;" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_next" value="https://kahromaa.com/thankyou.html" />
+              </form>
+    
+              <!-- Loading Message -->
+              <div id="submissionMessage" class="hidden px-6 py-4 bg-red-50 border-t border-red-100">
+                <p class="text-red-700 text-lg font-semibold flex items-center justify-center almarai-bold">
+                  <i class="fas fa-spinner fa-spin ml-2"></i>
+                  جاري ارسال رسالتك يرجى الإنتظار
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      document.getElementById('submissionMessage').classList.remove('hidden');
+    });
+    </script>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          document
+            .getElementById("submissionMessage")
+            .classList.remove("hidden");
+        });
+    </script>
 
     <!-- footer -->
     <!-- Footer Section -->
@@ -632,5 +755,12 @@
     </footer>
 
     <script src="./app.js"></script>
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
   </body>
 </html>
